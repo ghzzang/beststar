@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 회색 테마 -->
+    <color name="purple_200">#FFEEEEEE</color> <!-- 밝은 회색 -->
+    <color name="purple_500">#FF9E9E9E</color> <!-- 기본 회색 -->
+    <color name="purple_700">#FF616161</color> <!-- 진한 회색 -->
+    <color name="teal_200">#FFBDBDBD</color> <!-- 보조 밝은 회색 -->
+    <color name="teal_700">#FF757575</color> <!-- 보조 진한 회색 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+</resources>

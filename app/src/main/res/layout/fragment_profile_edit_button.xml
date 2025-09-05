@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 툴 바 -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <!-- 사용자 정보 레이아웃 -->
+        <RelativeLayout
+            android:id="@+id/userInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <!-- 프로필 사진 -->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+            <!-- 프로필 사진 변경 버튼 -->
+            <Button
+                android:id="@+id/changePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프로필 사진 변경"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp" />
+        </RelativeLayout>
+        <!-- 구분선 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/userInfoLayout"
+            android:layout_marginTop="8dp" />
+        <!-- 프로필 이름 -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="닉네임"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/userInfoLayout"/>
+        <!-- 구분선 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/usernameEditText"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etSignUpPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/usernameEditText"/>
+        <EditText
+            android:id="@+id/etSignUpeditPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호확인"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/etSignUpPassword"/>
+        <!-- 구분선 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/etSignUpeditPassword"
+            android:layout_marginTop="8dp" />
+        <!-- 프로필 저장 버튼 -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:layout_below="@id/etSignUpeditPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+        <!-- 구분선 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/saveButton"
+            android:layout_marginTop="8dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

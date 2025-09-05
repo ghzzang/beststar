@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 툴바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="마이페이지"
+        android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 사용자 정보 레이아웃 -->
+            <RelativeLayout
+                android:id="@+id/userInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#ECECEC">
+
+                <!-- 사용자 사진 -->
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"/>
+
+                <!-- 사용자 이름 -->
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사용자 이름"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@id/profileImageView"
+                    android:layout_alignTop="@id/profileImageView"
+                    android:layout_marginStart="16dp" />
+
+                <!-- 수정하기 버튼 -->
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="프로필 수정"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/profileImageView"
+                    android:layout_marginEnd="16dp"/>
+            </RelativeLayout>
+
+            <!-- LinearLayout: 버튼 모음 -->
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/userInfoLayout"
+                android:layout_marginTop="16dp">
+
+                <!-- 내 글 버튼 -->
+                <Button
+                    android:id="@+id/myPostsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성한 게시물"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp" />
+
+                <!-- 작성 댓글 -->
+                <Button
+                    android:id="@+id/mycommentButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성한 댓글"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- 관심게시물 버튼 -->
+                <Button
+                    android:id="@+id/likedpostButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="관심게시물"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- 구분선 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp" />
+
+                <!-- 공지사항 버튼 -->
+                <Button
+                    android:id="@+id/noticeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공지사항"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- 고객센터 버튼 -->
+                <Button
+                    android:id="@+id/customerServiceButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고객센터"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- 구분선 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp" />
+
+                <!-- 로그아웃 버튼 -->
+                <Button
+                    android:id="@+id/logoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="로그아웃"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- 회원탈퇴 버튼 -->
+                <Button
+                    android:id="@+id/withdrawButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="회원탈퇴"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- 구분선 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 가로 스크롤 가능한 카테고리 -->
+    <HorizontalScrollView
+        android:id="@+id/categoryScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/categoryLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="별점"/>
+
+            <Button
+                android:id="@+id/btnFree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자유"/>
+
+            <Button
+                android:id="@+id/btnPopular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인기"/>
+
+            <Button
+                android:id="@+id/btnQnA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="질문과 답변"/>
+
+            <Button
+                android:id="@+id/btnPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="홍보"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/boardRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/categoryScrollView"
+        android:padding="8dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"/>
+</RelativeLayout>

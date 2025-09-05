@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "719260382190",
+    "firebase_url": "https://good-menu-default-rtdb.firebaseio.com",
+    "project_id": "good-menu",
+    "storage_bucket": "good-menu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719260382190:android:dd26dd521afe06c9cdd4ff",
+        "android_client_info": {
+          "package_name": "com.example.good"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA04ZYnMQJYf6xOi2wmxSk_hEpI33vjkpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
